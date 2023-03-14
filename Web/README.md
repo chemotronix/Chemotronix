@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/007d7429-cbb3-450a-bde4-214fc0737e91/deploy-status)](https://app.netlify.com/sites/chemotronix/deploys)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

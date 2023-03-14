@@ -27,6 +27,7 @@
     "web3.storage": "^4.4.0"
   },
   "devDependencies": {
+    "@apollo/client": "^3.6.9",
     "autoprefixer": "^10.4.8",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",

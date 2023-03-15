@@ -9,7 +9,7 @@ The carbon emissions data from the IoT device is saved to web3storage(built on I
 The data from the IoT device is also analyzed using A.I such that stakeholders can forecast carbon emissions and take actions 
 to gradually reduce it.
 
-# Polygon for Chemotronix
+# Blockchain technologies deployed at Chemotronix
 
 Polygon enabled us to build a scalable blockchain ecosystem, with minimal transaction fees. Polygon was used to create an ERC-20 token called CMX, which essentially serves as carbon credits for users to trade on the blockchain, enabling carbon emitters to effectively offset their carbon emissions as they were tracked by the IoT device.
 

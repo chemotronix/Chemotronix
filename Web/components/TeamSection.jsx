@@ -1,5 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
+import Image from "next/image";
+import Festus from "../images/Festus31.jpg";
 import LetterCircle from "./LetterCircle";
 import { motion } from "framer-motion";
 function TeamSection({ teamRef }) {
@@ -20,6 +22,7 @@ function TeamSection({ teamRef }) {
             <p className="text-[25px] lg:w-[400px]">{details}</p>
           </div>
           <div className="flex flex-wrap max-w-xl">
+          <Image src={Festus} />
             <LetterCircle
               letter={"P"}
               color={"#0FE76A"}
@@ -32,6 +35,7 @@ function TeamSection({ teamRef }) {
                       transition={{ delay: 0.5, duration: 1.4, type: "spring" }}
                       exit={{ opacity: 0 }}
                     >
+                    
                       <span>
                         <span className="text-3xl font-[400]">
                           Peace Bello,

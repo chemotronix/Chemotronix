@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRef,useState } from "react";
 import ContactSection from "../components/ContactSection";
 import Hero from "../components/Hero";
-import MicrosoftSection from "../components/MicrosoftSection";
+import PartnerSection from "../components/PartnerSection";
 import Navbar from "../components/Navbar";
 import QuoteSection from "../components/QuoteSection";
 import TeamSection from "../components/TeamSection";
@@ -46,7 +46,7 @@ export default function Home() {
           <QuoteSection />
           <ThirdSection />
           <TeamSection />
-          <MicrosoftSection/>
+          <PartnerSection/>
           <ContactSection />
       </main>
       </DefaultLayout>)}

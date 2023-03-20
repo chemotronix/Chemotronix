@@ -102,7 +102,13 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        Scroll over your cursor on later to see the magic!
+                        <span className="text-3xl font-[400]">
+                          Victor Olufemi,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Hardware Engineer
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -143,7 +149,13 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        Scroll over your cursor on later to see the magic!
+                        <span className="text-3xl font-[400]">
+                          Boluwatife Jemiriye,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          UI/UX designer
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -184,7 +196,13 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        Scroll over your cursor on later to see the magic!
+                        <span className="text-3xl font-[400]">
+                          Grace Omojola,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Data scientist
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -224,8 +242,14 @@ function TeamSection({ teamRef }) {
                       transition={{ delay: 0.5, duration: 0.4 }}
                       exit={{ opacity: 0 }}
                     >
-                      <span>
-                        Scroll over your cursor on later to see the magic!
+                     <span>
+                        <span className="text-3xl font-[400]">
+                          Iyanuoluwa Adebayo,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Software developer
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>

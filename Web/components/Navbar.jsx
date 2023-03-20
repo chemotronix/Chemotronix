@@ -56,14 +56,14 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul className="py-2 px-4 border-t-2 border-primary bg-[#DCFFEB] z-40">
+            {/* <ul className="py-2 px-4 border-t-2 border-primary bg-[#DCFFEB] z-40">
               <li className="active:!bg-primary">
                 <a>About us</a>
               </li>
               <li className="active:!bg-primary">
                 <a>Technology</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary">
@@ -79,14 +79,14 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul className="py-2 px-1 border-t-2 border-primary bg-[#DCFFEB] z-40 w-[108px]">
+            {/* <ul className="py-2 px-1 border-t-2 border-primary bg-[#DCFFEB] z-40 w-[108px]">
               <li className="active:!bg-primary">
                 <a>About us</a>
               </li>
               <li className="active:!bg-primary">
                 <a>Technology</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className="active:!bg-primary">
             <a href="#team" className="font-[400] text-[#01431D] text-lg">

@@ -1,7 +1,5 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import Image from "next/image";
-import Festus from "../images/Festus31.jpg";
 import LetterCircle from "./LetterCircle";
 import { motion } from "framer-motion";
 function TeamSection({ teamRef }) {
@@ -22,10 +20,9 @@ function TeamSection({ teamRef }) {
             <p className="text-[25px] lg:w-[400px]">{details}</p>
           </div>
           <div className="flex flex-wrap max-w-xl">
-          <Image src={Festus} />
+          
             <LetterCircle
-              letter={"P"}
-              color={"#0FE76A"}
+              image={"/team/festus.jpg"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -35,7 +32,6 @@ function TeamSection({ teamRef }) {
                       transition={{ delay: 0.5, duration: 1.4, type: "spring" }}
                       exit={{ opacity: 0 }}
                     >
-                    
                       <span>
                         <span className="text-3xl font-[400]">
                           Peace Bello,
@@ -59,7 +55,13 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        Scroll over your cursor on later to see the magic!
+                        <span className="text-3xl font-[400]">
+                          Peace Bello,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Energy Innovator (Team Lead)
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -67,8 +69,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              letter={"V"}
-              color={"#FEF025"}
+             image={"/team/jess.png"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -109,8 +110,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              letter={"B"}
-              color={"#029CFF"}
+             image={"/team/image.jpg"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -151,8 +151,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              letter={"G"}
-              color={"#FEF025"}
+              image={"/team/image.jpg"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -193,8 +192,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              letter={"I"}
-              color={"#029CFF"}
+              image={"/team/festus.jpg"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -235,8 +233,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              letter={"O"}
-              color={"#0FE76A"}
+              image={"/team/jess.png"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>

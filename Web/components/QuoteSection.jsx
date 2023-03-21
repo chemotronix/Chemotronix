@@ -27,10 +27,10 @@ function QuoteSection() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="flex items-center flex-col ml-auto"
         >
-          <p className="text-[#008036] text-[40px] max-w-lg">
+          <p className="text-[#008036] text-[15px] lg:text-[20px] my-10 max-w-lg">
             “The future is green energy, sustainability, renewable energy.”
           </p>
-          <p className="mr-auto text-[25px] mt-8">Arnold Schwarzenegger</p>
+          <p className="mr-auto text-[15px] lg:text-[20px]">Arnold Schwarzenegger</p>
         </motion.div>
       </div>
     </div>

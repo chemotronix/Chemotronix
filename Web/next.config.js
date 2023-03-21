@@ -5,6 +5,7 @@ const nextConfig = {
   env: {
     WEB3STORAGE_TOKEN: process.env.WEB3STORAGE_TOKEN,
   },
+  output: 'standalone'
 };
 
 module.exports = nextConfig;

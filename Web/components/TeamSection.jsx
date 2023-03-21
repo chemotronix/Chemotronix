@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function TeamSection({ teamRef }) {
   const [details, setDetails] = React.useState(
     <AnimatePresence>
-      <motion.span exit={{ opacity: 0 }}>
+      <motion.span exit={{ opacity: 0 }} className="text-[17px] lg:text-[20px]">
         Scroll over your cursor on later to see the magic!
       </motion.span>
     </AnimatePresence>
@@ -13,13 +13,13 @@ function TeamSection({ teamRef }) {
 
   return (
     <div className="min-h-[50vh] pt-20 pb-20" ref={teamRef} id="#team">
-      <div className="flex items-center  justify-center my-auto">
+      <div className="flex items-center justify-center my-auto">
         <div className="flex items-center flex-wrap w-[80%] mx-auto justify-between mt-auto">
           <div className=" max-w-lg transition-all duration-500">
-            <h2 className="text-6xl font-bold">Our Team</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">Our Team</h2>
             <p className="text-[25px] lg:w-[400px]">{details}</p>
           </div>
-          <div className="flex flex-wrap max-w-xl">
+          <div className="flex justify-center flex-wrap max-w-xl mt-10">
           
             <LetterCircle
               image={"/team/festus.jpg"}
@@ -33,8 +33,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Peace Bello,
+                        <span className="text-1xl font-[400]">
+                          Peace Bello
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -55,8 +55,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Peace Bello,
+                        <span className="text-2xl font-[400]">
+                          Peace Bello
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -80,8 +80,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Victor Olufemi,
+                        <span className="text-2xl font-[400]">
+                          Victor Olufemi
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -102,8 +102,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Victor Olufemi,
+                        <span className="text-2xl font-[400]">
+                          Victor Olufemi
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -127,8 +127,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Boluwatife Jemiriye,
+                        <span className="text-2xl font-[400]">
+                          Boluwatife Jemiriye
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -149,8 +149,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Boluwatife Jemiriye,
+                        <span className="text-2xl font-[400]">
+                          Boluwatife Jemiriye
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -174,8 +174,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Grace Omojola,
+                        <span className="text-2xl font-[400]">
+                          Grace Omojola
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -196,8 +196,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Grace Omojola,
+                        <span className="text-2xl font-[400]">
+                          Grace Omojola
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -221,8 +221,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Iyanuoluwa Adebayo,
+                        <span className="text-2xl font-[400]">
+                          Iyanuoluwa Adebayo
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -243,8 +243,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                      <span>
-                        <span className="text-3xl font-[400]">
-                          Iyanuoluwa Adebayo,
+                        <span className="text-2xl font-[400]">
+                          Iyanuoluwa Adebayo
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -268,8 +268,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-3xl font-[400]">
-                          Oreoluwa Akinola,
+                        <span className="text-2xl font-[400]">
+                          Oreoluwa Akinola
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -290,7 +290,13 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        Scroll over your cursor on later to see the magic!
+                        <span className="text-2xl font-[400]">
+                          Oreoluwa Akinola
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Blockchain developer
+                        </span>
                       </span>
                     </motion.span>
                   </AnimatePresence>

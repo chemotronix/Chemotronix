@@ -16,7 +16,6 @@ function TeamSection({ teamRef }) {
       <div className="flex items-center justify-center my-auto">
         <div className="flex items-center flex-wrap w-[80%] mx-auto justify-between mt-auto">
           <div className=" max-w-lg transition-all duration-500">
-            <h2 className="text-3xl lg:text-4xl font-bold">Our Team</h2>
             <p className="text-[25px] lg:w-[400px]">{details}</p>
           </div>
           <div className="flex justify-center flex-wrap max-w-xl mt-10">

@@ -223,12 +223,7 @@ function Navbar({signedIn}) {
             </ul>
           </li>
           <li className="active:!bg-primary">
-            <a
-              href="#"
-              className="font-[400] text-[#01431D] text-lg border-[#99F5C0] border-b-2"
-            >
-              Team
-            </a>
+          <Link href={"/team"}>Team</Link>
           </li>
         </ul>
       </div>

@@ -40,8 +40,7 @@ function Hero() {
               <span className="text-[#E7E400]">.</span>
             </h2> */}
             <p className="text-[17px] lg:text-[20px]">
-              Bridging the gap to reducing greenhouse gas emissions using IoT
-              and BlockChain to acheiving net zero by 2050
+            Developing Clean energy technologies and digital solutions to ensure net zero emissions
             </p>
 
             <div className="pt-7 h-3 w-full"></div>
@@ -65,7 +64,7 @@ function Hero() {
           </motion.div>
         </div>
         <div className="flex items-center justify-center md:flex-row flex-col  mx-auto -mb-10  w-[80%]">
-          <HeroCard number={"2022"} text="Founded" />
+          <HeroCard number={"2021"} text="Founded" />
         </div>
       </div>
       <input type="checkbox" id="my-modal-4" className="modal-toggle" />

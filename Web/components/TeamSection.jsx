@@ -21,7 +21,9 @@ function TeamSection({ teamRef }) {
           <div className="flex justify-center flex-wrap max-w-xl mt-10">
           
             <LetterCircle
-              image={"/team/festus.jpg"}
+              // image={"/team/festus.jpg"}
+              letter="P"
+              color={"#0FE76A"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -68,7 +70,9 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-             image={"/team/jess.png"}
+            //  image={"/team/jess.png"}
+              letter="V"
+              color={"#FEF025"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -115,7 +119,9 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-             image={"/team/image.jpg"}
+            //  image={"/team/image.jpg"}
+              letter="B"
+              color={"#029CFF"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -162,7 +168,9 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              image={"/team/image.jpg"}
+              // image={"/team/image.jpg"}
+              letter="G"
+              color={"#FEF025"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -209,7 +217,9 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              image={"/team/festus.jpg"}
+              // image={"/team/festus.jpg"}
+              letter="I"
+              color={"#029CFF"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>
@@ -256,7 +266,9 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              image={"/team/jess.png"}
+              // image={"/team/jess.png"}
+              letter="O"
+              color={"#0FE76A"}
               hover={() =>
                 setDetails(
                   <AnimatePresence>

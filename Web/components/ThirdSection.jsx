@@ -9,15 +9,15 @@ import cleanEnergy from "../images/clean-energy.png";
 import iot from "../images/iot.png";
 function ThirdSection({ aboutRef }) {
   return (
-    <div className="third-section min-h-screen mx-auto" ref={aboutRef}>
+    <div className="third-section min-h-screen mx-auto bg-[#c9f5e0]" ref={aboutRef} >
       <div className="md:opacity-100 opacity-0">
         <Image src={Rectangle} style={{ zIndex: -10 }} />
       </div>
       <div className="md:hidden">
-        <Image src={Rectangle} style={{ zIndex: -10 }} />
+        {/* <Image src={Rectangle} style={{ zIndex: -10 }} /> */}
       </div>
       <div className="flex flex-wrap items-center justify-between w-[80%] mx-auto">
-        <div className="max-w-md lg:mb-0 mb-16">
+        <div className="max-w-md lg:mb-0 mb-16 ml-5">
           <h2 className="font-bold text-2xl lg:text-4xl max-w-xs uppercase">
             Who are <span className="text-primary">we?</span>
           </h2>
@@ -46,7 +46,7 @@ function ThirdSection({ aboutRef }) {
             </p>
           </div>
         </div>
-        <div className="max-w-md lg:mb-0 mb-20 mt-5 lg:mt-16">
+        <div className="max-w-md lg:mb-0 mb-20 mt-5 lg:mt-16 ml-5">
           <h2 className="font-bold text-2xl lg:text-4xl max-w-xs uppercase">
             Our <span className="text-primary">solution</span>
           </h2>

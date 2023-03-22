@@ -8,7 +8,7 @@ function ContactSection() {
           <p>Looking to partner with us?</p>
           <h2 className="font-bold text-2xl lg:text-4xl">Contact Us</h2>
           <p>
-            info@chevtrox.com <br />
+          info@chemotronix.org<br/>
           </p>
         </div>
         <div className="md:w-[50%] w-[86%] ">

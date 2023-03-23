@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import City from "../images/city.png";
-import Quote from "../images/quote.png";
+import Q1 from "../images/1.jpg";
+import Q2 from "../images/2.jpg";
+import Q3 from "../images/3.jpg";
+import Q4 from "../images/4.jpg";
+import Q5 from "../images/5.jpg";
+
 function QuoteSection() {
   return (
     <div className="flex items-center justify-center min-h-screen">
@@ -11,10 +16,14 @@ function QuoteSection() {
           initial={{ opacity: 0, y: -40, x: -40 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="flex flex-col items-center"
+          className="fle flex-co items-cnter"
         >
-          <div className="mr-auto ml-28">
-            <Image src={Quote} />
+          <div className="flex flex-row mr-auto">
+            <Image src={Q1} className="w-48 rounded"/>
+            <Image src={Q2} className="w-48 rounded"/>
+            <Image src={Q3} className="w-48 rounded"/>
+            <Image src={Q4} className="w-48 rounded"/>
+            <Image src={Q5} className="w-48 rounded"/>
           </div>
 
           <div className="mt-20">

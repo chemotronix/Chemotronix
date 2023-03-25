@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import HeroPic from "../images/hero.png";
+import Q2 from "../images/2.png";
 import HeroGradient from "../images/herograd.png";
 import HeroGradientMobile from "../images/mobilegrad.png";
 import Rectangle from "../images/Rectangle.png";
@@ -59,7 +60,7 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="flex flex-wrap"
           >
-            <Image src={HeroPic} />
+            <Image src={Q2} />
            
           </motion.div>
         </div>

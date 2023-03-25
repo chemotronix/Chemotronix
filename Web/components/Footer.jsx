@@ -5,7 +5,7 @@ import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-ic
 const Footer = () => {
   return (
     <div className='flex flex-col'>
-        <div className="flex mx-auto px-16 py-16 w-full justify-between flex-wrap">
+        <div className="flex mx-auto px-16 py-5 w-full justify-between flex-wrap">
             <div className='flex flex-col w-auto px-5 py-5'>
                 <h1 className=" text-2xl lg:text-4xl text-black font-bold">Chemotronix</h1>
                 <div className='flex flex-row justify-evenly py-5'>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <a href='#' className="link link-hover">Privacy policy</a>
             </div>
         </div>
-        <div className="flex items-center justify-center text-center py-6 w-full">
+        <div className="flex items-center justify-center text-center py-5 w-full">
           <p>Copyright ©2022. All right reserved | Chemotronix</p>
         </div>
     </div>

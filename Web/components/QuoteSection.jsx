@@ -10,7 +10,7 @@ import Q4 from "../images/4.png";
 
 function QuoteSection() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center mt-10">
       <div className="flex items-center flex-wrap mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -40, x: -40 }}

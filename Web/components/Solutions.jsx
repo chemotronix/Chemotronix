@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import co from "../images/co.jpg";
-import hydrogen from "../images/hydrogen.jpg";
-import netzero from "../images/netzero.jpg";
+import hydrogen from "../images/eco.png";
+import netzero from "../images/block.png";
 
 function Solutions() {
   return (

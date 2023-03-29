@@ -53,13 +53,13 @@ function ThirdSection({ aboutRef }) {
             energy through real time monitoring and visualizations.
           </p>
         </div>
-        <div className="flex items-center justify-between mt-5 mb-3">
+      </div>
+      <div className="flex items-center justify-evenly w-[80%] mx-auto mt-5 mb-3">
             <Image src={ai} />
             <Image src={iot} />
             <Image src={blockchain} />
             <Image src={cleanEnergy} />
           </div>
-      </div>
     </div>
   );
 }

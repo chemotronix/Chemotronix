@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Register from "../images/Register.png";
+import Register from "../images/register.png";
 import Logo from "../images/logo.png"
 import Dark from "../images/dark.png"
 
@@ -26,7 +26,7 @@ export default function Signup() {
             phone,
             zip,
             password,
-            confirmPassword
+            l
         }
         console.log(data);
     }

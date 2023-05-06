@@ -26,7 +26,6 @@ export default function Signup() {
             phone,
             zip,
             password,
-            l
         }
         console.log(data);
     }

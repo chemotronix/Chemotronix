@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
-import ColoredCard from "../components/ColoredCard";
-import Image from "next/image";
-import SmallerColorCard from "../components/SmallerColorCard";
+import TransactionsTable from "../components/TransactionsTable";
 
 export default function Dashboard() {
 
@@ -44,8 +42,8 @@ export default function Dashboard() {
 
                 <div className="rounded-lg px-4 py-7 lg:w-[98%] mt-10 border bg-white">
                 <h6 className="text-3xl">Credit Transaction / Usage</h6>
-                <div className="flex md:flex-row flex-col items-center gap-5">
-                    
+                <div className="flex">
+                   <TransactionsTable />
                 </div>
                 </div>
             </div>
@@ -54,3 +52,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

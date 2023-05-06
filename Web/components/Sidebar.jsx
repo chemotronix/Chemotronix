@@ -1,14 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Logo from "../images/logo.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-// import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard, faArrowRightFromBracket, faMessage, faLocation, faLaptopFile, faArrowsTurnToDots, faGrip} from '@fortawesome/free-solid-svg-icons'
 
-function Navbar({signedIn}) {
+function Sidebar({signedIn}) {
   const router = useRouter();
   const [mobileNav, setMobileNav] = React.useState(false);
   return (
@@ -170,4 +168,70 @@ function Navbar({signedIn}) {
   );
 }
 
-export default Navbar;
+export default Sidebar;
+
+
+// import React, { useState } from "react";
+// import Link from "next/link";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+// function Sidebar() {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const handleToggleMenu = () => {
+//     setIsOpen(!isOpen);
+//   };
+
+//   return (
+//     <div className="relative">
+//       <div className="flex justify-between items-center px-4 py-3 bg-blue-500 text-blue md:hidden">
+//         <span className="text-lg font-bold">My Dashboard</span>
+//         <button
+//           onClick={handleToggleMenu}
+//           className="focus:outline-none focus:text-whit"
+//         >
+//           {isOpen ? (
+//             <FontAwesomeIcon icon={faTimes} size="lg" />
+//           ) : (
+//             <FontAwesomeIcon icon={faBars} size="lg" />
+//           )}
+//         </button>
+//       </div>
+//       <nav
+//         className={`${
+//           isOpen ? "block" : "hidden"
+//         } absolute top-0 left-0 w-full bg-white shadow-lg md:relative md:w-64`}
+//       >
+//         <div className="p-4">
+//           <h2 className="text-lg font-semibold mb-4">Navigation</h2>
+//           <ul>
+//             <li>
+//               <Link href="/">
+//                 <a className="block py-2 px-4 text-gray-800 hover:bg-gray-100">
+//                   Dashboard
+//                 </a>
+//               </Link>
+//             </li>
+//             <li>
+//               <Link href="/transactions">
+//                 <a className="block py-2 px-4 text-gray-800 hover:bg-gray-100">
+//                   Transactions
+//                 </a>
+//               </Link>
+//             </li>
+//             <li>
+//               <Link href="/settings">
+//                 <a className="block py-2 px-4 text-gray-800 hover:bg-gray-100">
+//                   Settings
+//                 </a>
+//               </Link>
+//             </li>
+//           </ul>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// }
+
+// export default Sidebar;

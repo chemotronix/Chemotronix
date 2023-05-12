@@ -1,8 +1,12 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
 import TransactionsTable from "../components/TransactionsTable";
 
 export default function Dashboard() {
+
+  const router = useRouter();
+  const { name } = router.query;
 
   return (
     <div>
@@ -18,12 +22,12 @@ export default function Dashboard() {
                 <Sidebar/>
             </div>
           </div>
-          <div className="ml-5 w-[100%] lg:w-[80%] py-10 px-10 flex flex-col bg-[#f6f9ff]">
-               <h6 className="text-3xl font-bold mb-5">Welcome MicroTechnologies</h6>
+          <div className="lg:ml-5 w-[100%] lg:w-[80%] py-10 px-10 flex flex-col bg-[#f6f9ff]">
+               <h6 className="text-3xl font-bold mb-5">Welcome {name}! </h6>
             <div className="flex flex-wrap">
-                <div className="flex flex-row pl-10 flex-wrap items-center gap-5 rounded-lg px-4 py-7 mr-10 lg:w-[47%] border bg-white ">
+                <div className="flex flex-row pl-10 flex-wrap items-center gap-5 rounded-lg px-4 py-7 lg:mr-10 lg:w-[47%] border bg-white ">
                     <div className="w-[45%]"><p>Wallet Balance</p><p>$0</p></div>
-                    <div className="w-[45%]"><p>No. of Devices</p><p>2</p></div>
+                    <div className="w-[45%]"><p>No. of Devices</p><p>0</p></div>
                     <div className="w-[45%]"><p>Carbon Credits</p><p>0</p></div>
                     <div className="w-[45%]"><p>Wallet ID</p><p>NIL</p></div>
                     <button
@@ -33,18 +37,18 @@ export default function Dashboard() {
                     </button>
                 </div>
 
-                <div className="rounded-lg px-4 py-7 lg:w-[47%] border bg-white">
-                <h6 className="text-3xl">Monthly Usage Summary</h6>
-                <div className="flex md:flex-row flex-col items-center gap-5">
-                    
-                </div>
+                <div className="rounded-lg px-4 py-7 lg:w-[47%] mt-10 lg:mt-0 border bg-white">
+                  <h6 className="text-3xl">Monthly Usage Summary</h6>
+                  <div className="flex md:flex-row flex-col items-center gap-5">
+                      
+                  </div>
                 </div>
 
                 <div className="rounded-lg px-4 py-7 lg:w-[98%] mt-10 border bg-white">
-                <h6 className="text-3xl">Credit Transaction / Usage</h6>
-                <div className="flex">
-                   <TransactionsTable />
-                </div>
+                  <h6 className="text-3xl">Credit Transaction / Usage</h6>
+                  <div className="flex">
+                    <TransactionsTable />
+                  </div>
                 </div>
             </div>
             </div>

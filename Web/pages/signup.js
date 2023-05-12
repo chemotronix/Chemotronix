@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -15,19 +16,11 @@ export default function Signup() {
     const [zip, setZip] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const router = useRouter();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = {
-            name,
-            email,
-            address,
-            country,
-            phone,
-            zip,
-            password,
-        }
-        console.log(data);
+        router.push(`/dashboard?name=${name}`);
     }
 
 

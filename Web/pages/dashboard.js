@@ -16,7 +16,7 @@ export default function Dashboard() {
         <link rel="icon" href="/logo.png" />
       </Head>
 
-      <main className="flex bg-transparent text-black h-screen w-[100%]" data-theme="emerald">
+      <main className="flex bg-transparent text-black w-[100%]" data-theme="emerald">
         <div className="flex flex-col items-cente justify-cente py-8 w-[0%] lg:w-[20%]">
             <div className="">
                 <Sidebar/>
@@ -37,15 +37,15 @@ export default function Dashboard() {
                     </button>
                 </div>
 
-                <div className="rounded-lg px-4 py-7 lg:w-[47%] mt-10 lg:mt-0 border bg-white">
-                  <h6 className="text-3xl">Monthly Usage Summary</h6>
+                <div className="rounded-lg px-4 py-7 h-60 w-[100%] lg:w-[47%] mt-10 lg:mt-0 border bg-white">
+                  <h6 className="text-2xl">Monthly Usage Summary</h6>
                   <div className="flex md:flex-row flex-col items-center gap-5">
                       
                   </div>
                 </div>
 
-                <div className="rounded-lg px-4 py-7 lg:w-[98%] mt-10 border bg-white">
-                  <h6 className="text-3xl">Credit Transaction / Usage</h6>
+                <div className="rounded-lg w-[100%] px-4 py-7 lg:w-[98%] mt-10 border bg-white">
+                  <h6 className="text-2xl">Credit Transaction / Usage</h6>
                   <div className="flex">
                     <TransactionsTable />
                   </div>

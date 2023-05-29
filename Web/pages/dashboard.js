@@ -6,6 +6,7 @@ import { ConnectButton, showBalance } from "@rainbow-me/rainbowkit";
 import Dark from "../images/dark.png"
 import Image from "next/image";
 import { useAccount, useDisconnect, useBalance } from "wagmi";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -122,11 +123,13 @@ export default function Dashboard() {
                       <p className="text-[#A0A0A0]">Wallet ID</p>
                       <p className="text-2xl">NIL</p>
                     </div>
+                    <Link href="/buyCredit">
                     <button
                       type="submit"
                       className="text-white bg-green-700 flex justify-center lg:w-[95%] h-12 rounded-lg px-12  items-center"
                       > Buy Carbon Credit
                     </button>
+                    </Link>
                 </div>
 
                 <div className="rounded-lg px-4 py-7 h-60 w-[100%] lg:w-[47%] mt-10 lg:mt-0 border bg-white">

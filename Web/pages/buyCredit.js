@@ -98,7 +98,7 @@ export default function BuyCredit() {
                 </div>
 
                 
-            <div className="flex flex-wrap justify-center mt-10">
+            <div className="flex flex-wrap w-[100%] justify-center mt-10">
                 <div className=" rounded-lg w-[100%] px-10 py-7 lg:w-[50%] mb-10 border bg-white">
                   <h6 className="text-2xl text-center mb-10">Purchase Carbon Credits</h6>
                  <form onSubmit={handleSubmit} className="flex w-full flex-wrap">
@@ -115,9 +115,7 @@ export default function BuyCredit() {
                     className="w-full cursor-pointer px-3 py-3 border-2 mt-5 rounded-lg"
                   />
                 </div>
-                <div className="absolute top-7 left-10 flex  items-center cursor-pointer">
-                    <p className="font-bold">CMX</p>
-                  </div>
+                
                 
                 <div className="w-[100%] lg:w-[100%] mr-10 mb-5">
                     <label htmlFor="Company">Device ID</label>

@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 
-export default function Dashboard() {
+export default function Devices() {
 
     const [deviceID, setDeviceID] = useState("ipvhcsd78");
     const [availableCredit, setAvailableCredit] = useState("25000");

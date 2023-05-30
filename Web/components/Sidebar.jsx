@@ -49,7 +49,7 @@ function Sidebar({signedIn}) {
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary">
             <FontAwesomeIcon icon={faLocation} />
-            <Link href="dashboard">IoT Location</Link>
+            <Link href="iot">IoT Location</Link>
             </a>
           </li>
           <li tabIndex="0">

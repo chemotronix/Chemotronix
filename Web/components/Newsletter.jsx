@@ -5,6 +5,19 @@ const Newsletter = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+     if (name === 'FNAME' ) {
+        const letterRegex = /^[A-Za-z\s]+$/;
+        if (!value.match(letterRegex) && value !== '') {
+          return;
+        }
+      }
+
+      setName(value);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -49,8 +62,9 @@ const Newsletter = () => {
                 type="text"
                 name="FNAME"
                 id="mce-FNAME"
-                onChange={(e) => setName(e.target.value)}
+                onChange={handleInputChange}
                 value={name}
+                required
                 placeholder="Name"
                 className="border-none bg-transparent outline-none placeholder:text-[#928B8B] w-full"
               />
@@ -73,6 +87,7 @@ const Newsletter = () => {
                 name="EMAIL"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
+                required
                 id="mce-EMAIL"
                 placeholder="Email"
                 className="border-none bg-transparent outline-none placeholder:text-[#928B8B] w-full"

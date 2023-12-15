@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-
+import jsonp from 'jsonp';
 const Newsletter = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -8,9 +8,13 @@ const Newsletter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Handle the form submission here (e.g., send the email to your server)
-    console.log('Name submitted:', name);
-    console.log('Email submitted:', email);
+    const url = 'https://chemotronix.us21.list-manage.com/subscribe/post-json?u=82d230ec4c16d214f3f9d2d45&amp;id=d38ba1704e&amp;f_id=00b6f4e6f0';
+    jsonp(`${url}&EMAIL=${email}&FNAME=${name}`, { param: 'c' }, (_, data) => {
+        const { msg, result } = data
+        // do something with response
+        alert(msg);
+    });
+
 
     // You can reset the email input field after submission
     setEmail('');
@@ -27,7 +31,7 @@ const Newsletter = () => {
           </p>
         </div>
         <div className="md:w-[50%] w-[86%] ">
-          <form  onSubmit={handleSubmit} className="mr-auto">
+          <form onSubmit={handleSubmit} className="mr-auto">
             <div
               style={{
                 background: "rgba(220, 255, 235, 0.93)",
@@ -43,8 +47,8 @@ const Newsletter = () => {
               {" "}
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="FNAME"
+                id="mce-FNAME"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 placeholder="Name"
@@ -66,10 +70,10 @@ const Newsletter = () => {
               {" "}
               <input
                 type="email"
-                name="email"
+                name="EMAIL"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                id="email"
+                id="mce-EMAIL"
                 placeholder="Email"
                 className="border-none bg-transparent outline-none placeholder:text-[#928B8B] w-full"
               />
@@ -83,3 +87,4 @@ const Newsletter = () => {
 }
 
 export default Newsletter;
+

@@ -5,9 +5,10 @@ import ContactSection from "../components/ContactSection";
 import Hero from "../components/Hero";
 import PartnerSection from "../components/PartnerSection";
 import Solutions from "../components/Solutions"
+import Newsletter from "../components/Newsletter";
 import Navbar from "../components/Navbar";
 import QuoteSection from "../components/QuoteSection";
-import TeamSection from "../components/TeamSection";
+import LatestTweets from '../components/News';
 import ThirdSection from "../components/ThirdSection";
 import DefaultLayout from "../layouts/DefaultLayout";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
@@ -47,13 +48,15 @@ export default function Home() {
           <QuoteSection />
           <Solutions/>
           <ThirdSection />
+          <LatestTweets />
           <PartnerSection/>
-          <ContactSection />
+          <Newsletter />
+          {/* <ContactSection /> */}
       </main>
       </DefaultLayout>)}
        </AnimatePresence>
        </AnimateSharedLayout>
     </div>
-    
+       
   );
 }

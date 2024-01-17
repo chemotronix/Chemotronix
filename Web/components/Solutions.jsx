@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import co from "../images/co.jpg";
 import hydrogen from "../images/solar.png";
-import netzero from "../images/block.png";
+import netzero from "../images/netzero.jpg";
 
 function Solutions() {
   return (
